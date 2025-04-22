@@ -24,7 +24,7 @@ Ensure both Auto1111 and SUPIR_Low_VRAM_Backend are running. The backend will li
 
 SUPIR - Low VRAM UI is automatically added to both txt2img and img2img when installed. The extension runs in Stable Diffusion's postprocess and requests an upscale from the back-end, submitting the image and parameters specified in the UI before recieving the upscaled image and passing it back to Stable Diffusion. Result images will appear in the respective txt2img/img2img output directories and the web ui output.
 - The Skip Img2Img option is available in the img2img UI and upscales the original input image. As this causes the extension to ignore the generated image, extensions that apply before the upscaler likely won't have any effect on the final result.
-- SUPIR's minimum output resolution is 1024x1024, if an upscale value is chosen that would produce an image with either dimension < 1024, the SUPIR automatically raises the upscale amount to meet the minimum required resolution.
+- SUPIR's minimum output resolution is 1024x1024, if an upscale value is chosen that would produce an image with either dimension < 1024, the SUPIR model automatically raises the upscale amount to meet the minimum required resolution.
 - The extension currently only includes SUPIR's 'Stage 2' process (the upscale), I hope to eventually include 'Stage 1' & Llava, however there is no guarantee on this.
 
 ## Thanks
