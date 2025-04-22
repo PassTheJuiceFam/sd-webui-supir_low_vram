@@ -18,6 +18,8 @@ To install, simply clone this repo and place the entire "sd-webui-supir_low_vram
 
 ## Usage
 
+Ensure both Auto1111 and SUPIR_Low_VRAM_Backend are running. The backend will listen for requests on the IP/Port displayed on the console. When enabled in the Auto1111 web-ui, the extension will call the backend to upscale your image - you can observe this in the console windows of both programs. When the upscale is complete, the backend send the upscaled image back to Auto1111 and the generation process will continue as usual.
+
 ![image](https://github.com/user-attachments/assets/f19e4826-0f68-4e7b-b54f-5d2b39680ecf)
 
 SUPIR - Low VRAM UI is automatically added to both txt2img and img2img when installed. The extension runs in Stable Diffusion's postprocess and requests an upscale from the back-end, submitting the image and parameters specified in the UI before recieving the upscaled image and passing it back to Stable Diffusion. Result images will appear in the respective txt2img/img2img output directories and the web ui output.
