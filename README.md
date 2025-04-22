@@ -24,3 +24,7 @@ SUPIR - Low VRAM UI is automatically added to both txt2img and img2img when inst
 - The Skip Img2Img option is available in the img2img UI and upscales the original input image. As this causes the extension to ignore the generated image, extensions that apply before the upscaler likely won't have any effect on the final result.
 - SUPIR's minimum output resolution is 1024x1024, if an upscale value is chosen that would produce an image with either dimension < 1024, the SUPIR automatically raises the upscale amount to meet the minimum required resolution.
 - The extension currently only includes SUPIR's 'Stage 2' process (the upscale), I hope to eventually include 'Stage 1' & Llava, however there is no guarantee on this.
+
+## Thanks
+- Thank you to the SUPIR team for both their incredible work with SUPIR and for releasing the project as open-source
+- Thank you to all the developers of AUTO1111 extensions, whose code I spent time digging around through to learn how AUTO1111 extensions work 
